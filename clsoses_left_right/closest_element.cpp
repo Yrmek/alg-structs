@@ -1,38 +1,40 @@
-
 #include <iostream>
 #include <stack>
+#include <vector>
 
 using namespace std;
 
-const int SIZE = 10;
+void nearestSmallerElements(const vector<int>& arr) {
+    stack<int> s;
+    vector<int> result(arr.size(), -1);
 
-void findNearestSmallerElements(int arr[]) 
-{
-    stack<int> s; 
-    int result[SIZE]; // stores the index of nearest smaller element on the right
-    cout << "Исходный массив:" << endl;
-    for (int i = 0; i < SIZE; i++) {
-        cout << arr[i] <<" ";
-    }
-    cout << endl;
+    for (int i = 0; i < arr.size(); ++i) {
+        while (!s.empty() && arr[s.top()] >= arr[i]) { // left 
+            s.pop();
+        }
+        //while (!s.empty() && arr[s.top()] >= arr[i]) { // right
+        //    s.pop();
+        //}
 
-    int index = 0;
+        if (!s.empty()) {
+            result[i] = s.top();
+        }
 
-    for (int i = SIZE - 1; i >= 0; --i)
-    {
-        index = i;
         s.push(i);
-        while(s.top() )
-
     }
-    cout << "ans: " << endl;
-    for (int i = 0; i < SIZE; i++) {
-        cout << result[i] << " ";
+
+    for (int i = 0; i < arr.size(); ++i) {
+        cout << "For element " << arr[i] << ": ";
+        if (result[i] != -1) {
+            cout << "Nearest smaller element on the left is " << arr[result[i]] << " at index " << result[i] << endl;
+        } else {
+            cout << "No smaller element on the left" << endl;
+        }
     }
 }
 
 int main() {
-    int arr[] = { 6, 5, 9, 8, 7, 1, 2, 3, 5 };
-    findNearestSmallerElements(arr);
+    vector<int> a = {6, 5, 9, 8, 7, 1, 2, 3, 5};
+    nearestSmallerElements(a);
     return 0;
 }

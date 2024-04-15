@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string>
 
 using namespace std;
 
@@ -10,7 +9,9 @@ void main()
 	int m = 0, n = 0;
 	cin >> n >> m;
 	vector<vector<int>> table(n, vector<int>(n,0)) ;
-	table = { {1,3,2},{3,2,1},{2,1,3} };
+	table = {{1,3,2},
+			 {3,2,1},
+			 {2,1,3}};
 	vector<int> reagents(m, 0);
 
 	/*cout << "Enter matrix :" << endl;

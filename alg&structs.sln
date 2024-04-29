@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "graph_var4", "graph_var4\gr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matrixgraph_var4", "matrixgraph_var4\matrixgraph_var4.vcxproj", "{CB5BC1E7-AE0A-47AF-9B1D-3AF241D6E6A0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab4_#6(profit)", "lab4_#6(profit)\lab4_#6(profit).vcxproj", "{D1115AB7-1F05-47AE-A5DB-5C7658C4F36C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{CB5BC1E7-AE0A-47AF-9B1D-3AF241D6E6A0}.Release|x64.Build.0 = Release|x64
 		{CB5BC1E7-AE0A-47AF-9B1D-3AF241D6E6A0}.Release|x86.ActiveCfg = Release|Win32
 		{CB5BC1E7-AE0A-47AF-9B1D-3AF241D6E6A0}.Release|x86.Build.0 = Release|Win32
+		{D1115AB7-1F05-47AE-A5DB-5C7658C4F36C}.Debug|x64.ActiveCfg = Debug|x64
+		{D1115AB7-1F05-47AE-A5DB-5C7658C4F36C}.Debug|x64.Build.0 = Debug|x64
+		{D1115AB7-1F05-47AE-A5DB-5C7658C4F36C}.Debug|x86.ActiveCfg = Debug|Win32
+		{D1115AB7-1F05-47AE-A5DB-5C7658C4F36C}.Debug|x86.Build.0 = Debug|Win32
+		{D1115AB7-1F05-47AE-A5DB-5C7658C4F36C}.Release|x64.ActiveCfg = Release|x64
+		{D1115AB7-1F05-47AE-A5DB-5C7658C4F36C}.Release|x64.Build.0 = Release|x64
+		{D1115AB7-1F05-47AE-A5DB-5C7658C4F36C}.Release|x86.ActiveCfg = Release|Win32
+		{D1115AB7-1F05-47AE-A5DB-5C7658C4F36C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

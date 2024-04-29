@@ -29,7 +29,7 @@ struct Graf
     void addEdge(int v1, int v2)
     {
         adjMatrix[v1][v2] = true;
-        adjMatrix[v2][v1] = true;
+      
     }
 
     void removeEdge(int v1, int v2)
@@ -144,13 +144,15 @@ struct Graf
 int main()
 {
     setlocale(LC_ALL, "");
-    Graf* graf = new Graf(6);
+    Graf* graf = new Graf(7);
 
     graf->addEdge(0, 1);
     graf->addEdge(0, 2);
     graf->addEdge(1, 3);
-    graf->addEdge(2, 3);
     graf->addEdge(3, 4);
+    graf->addEdge(2, 3);
+    graf->addEdge(0, 6);
+    graf->addEdge(6, 4);
 
     graf->printGraph();
 
@@ -168,8 +170,8 @@ int main()
         graf->addEdge(0, 4);
     }
 
-    cout << "Поиск пути между вершинами 0 и 5:" << endl;
-    if (!graf->findSimplePathUsingDFS(0, 5))
+    cout << "Поиск пути между вершинами 1 и 2:" << endl;
+    if (!graf->findSimplePathUsingDFS(1, 2))
     {
         graf->addEdge(0, 5);
     }

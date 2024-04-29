@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{48bea36f-8aa5-4f67-9cdb-afd1f4e7f43b}</ProjectGuid>
-    <RootNamespace>graphvar4</RootNamespace>
+    <ProjectGuid>{d1115ab7-1f05-47ae-a5db-5c7658c4f36c}</ProjectGuid>
+    <RootNamespace>lab46profit</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,10 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="graph.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="iput.txt" />
+    <ClCompile Include="#6(profit).cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
